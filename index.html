@@ -1,0 +1,835 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="An offline beginner guide to the first 1000 characters of Mandarin Chinese: a mental model for how characters work, a filterable vocabulary list with pinyin, core grammar patterns, and a printable quick guide.">
+  <title>First 1000 Characters — A Beginner's Guide to Mandarin Chinese</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the guide</a>
+  <header class="site-header">
+    <a class="brand" href="#start" aria-label="First 1000 Characters, back to start">
+      <svg class="brand-mark" viewBox="0 0 44 44" aria-hidden="true" focusable="false">
+        <rect x="4" y="4" width="36" height="36"></rect>
+        <path d="M22 11v22M13 18h18M13 26h18"></path>
+      </svg>
+      <span><strong>First 1000 Characters</strong><small>Mandarin · beginner · offline-ready</small></span>
+    </a>
+    <nav class="wide-nav" aria-label="Primary">
+      <a href="#model">Model</a><a href="#essentials">Essentials</a><a href="#path">Path</a>
+      <a href="#vocabulary">Vocabulary</a><a href="#grammar">Grammar</a><a href="#practice">Practice</a>
+      <a href="#fix-it">Fix it</a><a href="#next">Next</a><a class="print-link" href="print-guide.html">Print</a>
+    </nav>
+    <a class="compact-print" href="print-guide.html">Print guide</a>
+    <details class="jump-menu">
+      <summary>Jump to section</summary>
+      <nav aria-label="Section menu">
+        <a href="#start">Start</a><a href="#model">Mental model</a><a href="#essentials">Essentials</a>
+        <a href="#path">Learning path</a><a href="#vocabulary">Vocabulary</a><a href="#grammar">Grammar</a>
+        <a href="#practice">Practice</a><a href="#options">Other routes</a><a href="#fix-it">Fix it</a>
+        <a href="#next">Next steps</a><a href="print-guide.html">Print guide</a>
+      </nav>
+    </details>
+  </header>
+
+  <main id="main">
+    <section class="hero dark-section" id="start" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Beginner guide · Mandarin · simplified characters</p>
+        <h1 id="hero-title">A thousand characters carry most of what you read.</h1>
+        <p class="deck">Learn how Chinese characters are built, which ones to meet first, and the handful of sentence patterns that turn vocabulary into conversation. Every new character and term on this page is written with pinyin.</p>
+        <div class="actions">
+          <a class="button primary" href="#model">Start with the model</a>
+          <a class="button ghost" href="#vocabulary">Open the vocabulary list</a>
+        </div>
+        <ul class="trust-row" aria-label="Guide features">
+          <li>No apps or accounts</li>
+          <li>Pinyin on every term</li>
+          <li>Sources cited</li>
+          <li>Works offline</li>
+        </ul>
+      </div>
+      <figure class="stack-figure">
+        <figcaption><span>Why 1000</span> Character coverage of running text</figcaption>
+        <div class="diagram-scroll" tabindex="0" role="group" aria-label="Scrollable coverage chart">
+          <svg viewBox="0 0 620 260" role="img" aria-labelledby="coverage-title coverage-desc">
+            <title id="coverage-title">How much written Chinese the most frequent characters cover</title>
+            <desc id="coverage-desc">Knowing the 100 most frequent characters covers about 42 percent of character tokens in running text, the top 500 about 75 percent, the top 1000 about 89 percent, and the top 2000 about 97 percent.</desc>
+            <line class="dgm-tick" x1="150" y1="20" x2="150" y2="215"></line>
+            <line class="dgm-tick" x1="590" y1="20" x2="590" y2="215"></line>
+            <g class="dgm-label">
+              <text x="0" y="47">TOP 100</text>
+              <text x="0" y="97">TOP 500</text>
+              <text x="0" y="147">TOP 1000</text>
+              <text x="0" y="197">TOP 2000</text>
+            </g>
+            <g>
+              <rect class="dgm-box" x="150" y="28" width="185" height="26"></rect>
+              <rect class="dgm-box" x="150" y="78" width="330" height="26"></rect>
+              <rect class="dgm-box accent" x="150" y="128" width="392" height="26"></rect>
+              <rect class="dgm-box jade" x="150" y="178" width="427" height="26"></rect>
+            </g>
+            <g class="dgm-note">
+              <text x="345" y="47">42%</text>
+              <text x="490" y="97">75%</text>
+              <text x="552" y="147">89%</text>
+              <text x="587" y="197" text-anchor="end">97%</text>
+              <text x="150" y="238">Token coverage of written text · Jun Da corpus, 2004 · 100% mark at right</text>
+            </g>
+          </svg>
+        </div>
+        <ol class="callouts">
+          <li><b>Scope.</b> Modern Standard Mandarin, simplified characters, Hanyu Pinyin.</li>
+          <li><b>Audience.</b> Adults starting from zero, or restarting after a stalled first attempt.</li>
+          <li><b>Outcome.</b> Read and say short everyday sentences, and know exactly what to study next.</li>
+        </ol>
+      </figure>
+    </section>
+
+    <section class="paper-section" id="model" aria-labelledby="model-title">
+      <div class="section-heading"><span>01</span><div><p class="eyebrow">Mental model</p><h2 id="model-title">Characters stack, they are not drawn</h2></div></div>
+      <p class="lede">Beginners usually treat a character as a picture to memorise. Almost none of them are. A character is assembled from a small set of reusable parts, and most of those parts do one of two jobs: hint at the <strong>meaning</strong>, or hint at the <strong>sound</strong>. Learn the ladder once and every later character costs less.</p>
+
+      <figure class="stack-figure on-paper">
+        <figcaption><span>The ladder</span> Stroke → component → character → word → sentence</figcaption>
+        <div class="diagram-scroll" tabindex="0" role="group" aria-label="Scrollable character-building diagram">
+          <svg viewBox="0 0 760 250" role="img" aria-labelledby="ladder-title ladder-desc">
+            <title id="ladder-title">How a Chinese character is assembled</title>
+            <desc id="ladder-desc">Strokes combine into components. The meaning component 女, nǚ, woman, joins the sound component 马, mǎ, horse, to form the character 妈, mā, mother. That character doubles into the word 妈妈, māma, mum, which appears in the sentence 我妈妈很忙, wǒ māma hěn máng, my mum is very busy.</desc>
+            <g class="dgm-label">
+              <text x="10" y="24">STROKES</text>
+              <text x="160" y="24">COMPONENTS</text>
+              <text x="330" y="24">CHARACTER</text>
+              <text x="480" y="24">WORD</text>
+              <text x="610" y="24">SENTENCE</text>
+            </g>
+            <rect class="dgm-box" x="10" y="38" width="120" height="120"></rect>
+            <text class="dgm-han" x="34" y="105">一丨丿</text>
+            <text class="dgm-note" x="26" y="140">8 basic strokes</text>
+
+            <rect class="dgm-box jade" x="160" y="38" width="140" height="120"></rect>
+            <text class="dgm-han small" x="180" y="80">女</text>
+            <text class="dgm-py" x="208" y="80">nǚ · woman</text>
+            <text class="dgm-note" x="180" y="100">meaning hint</text>
+            <text class="dgm-han small" x="180" y="132">马</text>
+            <text class="dgm-py" x="208" y="132">mǎ · horse</text>
+            <text class="dgm-note" x="180" y="152">sound hint</text>
+
+            <rect class="dgm-box accent" x="330" y="38" width="120" height="120"></rect>
+            <text class="dgm-han" x="360" y="100">妈</text>
+            <text class="dgm-py" x="352" y="128">mā · mother</text>
+
+            <rect class="dgm-box" x="480" y="38" width="110" height="120"></rect>
+            <text class="dgm-han small" x="498" y="95">妈妈</text>
+            <text class="dgm-py" x="494" y="122">māma · mum</text>
+
+            <rect class="dgm-box" x="620" y="38" width="130" height="120"></rect>
+            <text class="dgm-han small" x="634" y="85">我妈妈</text>
+            <text class="dgm-han small" x="634" y="112">很忙。</text>
+            <text class="dgm-py" x="634" y="136">My mum is busy.</text>
+
+            <g class="dgm-arrow">
+              <path d="M134 98 H154"></path><path d="M148 92 l8 6 -8 6"></path>
+              <path d="M304 98 H324"></path><path d="M318 92 l8 6 -8 6"></path>
+              <path d="M454 98 H474"></path><path d="M468 92 l8 6 -8 6"></path>
+              <path d="M594 98 H614"></path><path d="M608 92 l8 6 -8 6"></path>
+            </g>
+            <text class="dgm-note" x="10" y="200">Roughly 80–90% of characters are built this way: one part for meaning, one part for sound (形声字 xíngshēngzì).</text>
+            <text class="dgm-note" x="10" y="222">The sound hint is approximate — 马 mǎ gives 妈 mā its syllable but not its tone.</text>
+          </svg>
+        </div>
+      </figure>
+
+      <div class="rule-grid">
+        <article><b>1</b><h3>Strokes are written in a fixed order</h3><p>Every character is drawn top to bottom, left to right, horizontal before vertical. Consistent order is what makes handwriting recognition, dictionaries, and your own muscle memory work.</p></article>
+        <article><b>2</b><h3>Components repeat</h3><p>A few hundred components (部首 <span class="py">bùshǒu</span>, radicals, and phonetic parts) build thousands of characters. 女 <span class="py">nǚ</span> alone appears in 妈, 好, 她, 姐.</p></article>
+        <article><b>3</b><h3>Meaning + sound is the default</h3><p>When you meet a new character, ask which half hints at the meaning and which half hints at the sound. The sound hint is a family resemblance, not a rule.</p></article>
+        <article><b>4</b><h3>Characters are not words</h3><p>字 <span class="py">zì</span> is a character; 词 <span class="py">cí</span> is a word. Most modern words are two characters, so 1000 characters unlock far more than 1000 words.</p></article>
+      </div>
+
+      <p class="formula"><strong>stroke</strong> <span>→</span> <strong>component</strong> <span>→</span> <strong>character (字 zì)</strong> <span>→</span> <strong>word (词 cí)</strong> <span>→</span> <strong>sentence pattern</strong></p>
+
+      <div class="caveat">
+        <b>Caveat · how firm is this number?</b>
+        Estimates that 80–90% of characters are semantic-phonetic compounds come from sinological analysis rather than one modern study, and the share depends on which character set is counted (Xu Shen's 说文解字 corpus is about 82%). Treat the structure as dominant, not universal: 日 <span class="py">rì</span> (sun) and 上 <span class="py">shàng</span> (above) have no sound part at all.
+      </div>
+
+      <div class="check-panel">
+        <h3>Break down any new character</h3>
+        <ol>
+          <li>Say the pinyin aloud, with the tone.</li>
+          <li>Split it into left/right or top/bottom parts.</li>
+          <li>Name the part you already know.</li>
+          <li>Decide which part is meaning and which is sound.</li>
+          <li>Write it once in stroke order.</li>
+          <li>Use it in one sentence you would actually say.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="dark-section" id="essentials" aria-labelledby="essentials-title">
+      <div class="section-heading"><span>02</span><div><p class="eyebrow">Essentials</p><h2 id="essentials-title">Six things to settle before character one</h2></div></div>
+      <div class="three-col">
+        <article class="card">
+          <p class="tag">Sound</p>
+          <h3>Pinyin and the four tones</h3>
+          <p>Hanyu Pinyin spells Mandarin syllables in Latin letters. Four tones plus a neutral tone change meaning outright: 妈 <span class="py">mā</span> mother, 麻 <span class="py">má</span> hemp, 马 <span class="py">mǎ</span> horse, 骂 <span class="py">mà</span> to scold, 吗 <span class="py">ma</span> question particle.</p>
+          <p>Tone is part of the word. Learn every character with its tone attached, never as bare letters.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Sound</p>
+          <h3>Two tone changes you will hear immediately</h3>
+          <p>Two third tones in a row: the first is said as a second tone — 你好 is written <span class="py">nǐ hǎo</span> and said <span class="py">ní hǎo</span>.</p>
+          <p>不 <span class="py">bù</span> becomes <span class="py">bú</span> before a fourth tone: 不是 <span class="py">bú shì</span>. Textbooks usually print the original tone, which is why what you hear can differ from the page.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Script</p>
+          <h3>Simplified or traditional</h3>
+          <p>Mainland China and Singapore use simplified characters, and Chinese-medium schools in Malaysia teach them. Taiwan, Hong Kong, and Macau use traditional characters. All HSK exam materials are simplified.</p>
+          <p>This guide is simplified throughout. Pick one script now; switching later is much easier than learning both at once.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Counting</p>
+          <h3>Characters versus words</h3>
+          <p>Chinese text has no spaces. 字 <span class="py">zì</span> is a written character; 词 <span class="py">cí</span> is a word, usually two characters. 电 <span class="py">diàn</span> electric plus 话 <span class="py">huà</span> speech gives 电话 <span class="py">diànhuà</span>, telephone.</p>
+          <p>A "1000 character" goal and a "1000 word" goal are different targets. This site teaches characters through the words they appear in.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Coverage</p>
+          <h3>What 1000 characters really buys</h3>
+          <p>In a large corpus of written Chinese, the 1000 most frequent characters account for roughly 89% of the characters on the page, and the top 2000 about 97%.</p>
+          <p>That is coverage of characters, not of meaning: an unknown compound made of two known characters still stops you. Expect fluent decoding, not full comprehension.</p>
+        </article>
+        <article class="card">
+          <p class="tag">Standards</p>
+          <h3>Which official list to aim at</h3>
+          <p>There is no official "top 1000 characters" document. The nearest anchors are the HSK 3.0 grading standard (GF 0025-2021), where Levels 1–4 cumulate to 1,200 characters, and the 2013 Table of General Standard Chinese Characters, whose primary table holds 3,500.</p>
+          <p>The vocabulary list below is a teaching subset chosen for this site, not an exam list.</p>
+        </article>
+      </div>
+
+      <div class="caveat">
+        <b>Caveat · exam standards are in transition</b>
+        HSK 2.0 (six levels, 150 to 5,000 words) and HSK 3.0 (three stages, nine levels) are both operative as of August 2026. HSK 3.0 took effect on 1 July 2021 and a further global pilot examination is scheduled for 20 September 2026, but no mandatory switchover date has been published. The two systems are not interchangeable, so check the current syllabus at the exam board before you buy books. HSK 2.0 was defined by word lists, so any per-level character count you see for it is an unofficial estimate.
+      </div>
+
+      <div class="table-wrap">
+        <p class="swipe-note">Swipe the table sideways to see every column.</p>
+        <table>
+          <caption>Official level targets, side by side</caption>
+          <thead>
+            <tr><th scope="col">Standard</th><th scope="col">Level</th><th scope="col">Characters (cumulative)</th><th scope="col">Words (cumulative)</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">HSK 3.0 (GF 0025-2021)</th><td>Level 1</td><td>300</td><td>500</td></tr>
+            <tr><th scope="row">HSK 3.0</th><td>Level 2</td><td>600</td><td>1,272</td></tr>
+            <tr><th scope="row">HSK 3.0</th><td>Level 3</td><td>900</td><td>2,245</td></tr>
+            <tr><th scope="row">HSK 3.0</th><td>Level 4</td><td>1,200</td><td>3,245</td></tr>
+            <tr><th scope="row">HSK 2.0</th><td>Levels 1–3</td><td>Not published</td><td>150 / 300 / 600</td></tr>
+            <tr><th scope="row">General Standard Table (2013)</th><td>Primary table</td><td>3,500</td><td>—</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Some summaries give HSK 3.0 Level 1 as 300 words rather than 500; the difference appears to be whether all vocabulary items or only content words are counted. See <a href="research-notes.md">research-notes.md</a>.</p>
+    </section>
+
+    <section class="dark-section alt" id="path" aria-labelledby="path-title">
+      <div class="section-heading"><span>03</span><div><p class="eyebrow">Learning path</p><h2 id="path-title">Six stages to the first thousand</h2></div></div>
+      <p class="lede">Each stage has one job, one checkable result, and a rough size. Do not move on because time passed; move on when the check passes.</p>
+      <ol class="learning-path">
+        <li>
+          <div><b>Stage 1</b><span class="stage-meta">Week 1 · 0 characters</span></div>
+          <div><p><strong>Fix the sound system.</strong> Learn pinyin initials, finals, and the four tones before any character.</p></div>
+          <div><p><em>Check:</em> you can hear the difference between 买 <span class="py">mǎi</span> (buy) and 卖 <span class="py">mài</span> (sell) four times out of five, and read any pinyin syllable aloud with its tone.</p></div>
+        </li>
+        <li>
+          <div><b>Stage 2</b><span class="stage-meta">Weeks 2–4 · ~100 characters</span></div>
+          <div><p><strong>Learn strokes and the highest-frequency characters.</strong> Write each one by hand at least once in correct stroke order.</p></div>
+          <div><p><em>Check:</em> you can write 我, 你, 好, 是, 不, 有, 人, 大, 小, 中 from memory and read them in any order.</p></div>
+        </li>
+        <li>
+          <div><b>Stage 3</b><span class="stage-meta">Weeks 5–10 · ~300 characters</span></div>
+          <div><p><strong>Add HSK 1 words and the first six sentence patterns.</strong> Every new character enters through a word, and every word enters through a sentence.</p></div>
+          <div><p><em>Check:</em> you can introduce yourself, ask someone's name, say where you live, and ask a yes/no question without notes.</p></div>
+        </li>
+        <li>
+          <div><b>Stage 4</b><span class="stage-meta">Months 3–5 · ~600 characters</span></div>
+          <div><p><strong>Add HSK 2 words, time expressions, and aspect.</strong> Start reviewing on a spaced schedule instead of re-reading lists.</p></div>
+          <div><p><em>Check:</em> you can describe yesterday, today, and tomorrow in three sentences, using 了 <span class="py">le</span> and a time word correctly placed.</p></div>
+        </li>
+        <li>
+          <div><b>Stage 5</b><span class="stage-meta">Months 6–9 · ~900 characters</span></div>
+          <div><p><strong>Add HSK 3 words, connectors, and comparison.</strong> Read graded texts daily; look up only what blocks meaning.</p></div>
+          <div><p><em>Check:</em> you can give a reason with 因为…所以… <span class="py">yīnwèi…suǒyǐ…</span> and compare two things with 比 <span class="py">bǐ</span>.</p></div>
+        </li>
+        <li>
+          <div><b>Stage 6</b><span class="stage-meta">Months 10–12 · ~1000+ characters</span></div>
+          <div><p><strong>Consolidate by reading and speaking, not by adding lists.</strong> Mine new characters from texts you actually want to read.</p></div>
+          <div><p><em>Check:</em> you can read a short graded story and explain it aloud, and you meet fewer than five unknown characters per page.</p></div>
+        </li>
+      </ol>
+      <div class="caveat">
+        <b>Caveat · timings are a plan, not evidence</b>
+        The stage sizes follow the HSK level structure, but the week and month figures are a planning estimate for roughly one focused hour a day. No study quoted here measures how long a specific learner needs. Spaced review itself is strongly supported by memory research (Ebbinghaus 1885; Cepeda et al. 2006); claims that any particular app is optimal for characters are not.
+      </div>
+    </section>
+
+    <section class="paper-section" id="vocabulary" aria-labelledby="vocab-title">
+      <div class="section-heading"><span>04</span><div><p class="eyebrow">Vocabulary explorer</p><h2 id="vocab-title">The first words, filtered by level</h2></div></div>
+      <p class="lede">A curated starter set of 148 high-frequency words and characters, every one with pinyin. Filter by level, filter by theme, or search in characters, pinyin, or English. Without JavaScript the whole table is still listed in level order.</p>
+
+      <div class="toolbar">
+        <div>
+          <p class="filter-label" id="level-filter-label">Filter by level</p>
+          <div class="filters" role="group" aria-labelledby="level-filter-label">
+            <button type="button" data-level-filter="all" aria-pressed="true" aria-controls="vocab-table">All levels</button>
+            <button type="button" data-level-filter="hsk1" aria-pressed="false" aria-controls="vocab-table">HSK 1</button>
+            <button type="button" data-level-filter="hsk2" aria-pressed="false" aria-controls="vocab-table">HSK 2</button>
+            <button type="button" data-level-filter="hsk3" aria-pressed="false" aria-controls="vocab-table">HSK 3</button>
+          </div>
+        </div>
+        <div>
+          <p class="filter-label" id="theme-filter-label">Filter by theme</p>
+          <div class="filters" role="group" aria-labelledby="theme-filter-label">
+            <button type="button" data-theme-filter="all" aria-pressed="true" aria-controls="vocab-table">All themes</button>
+            <button type="button" data-theme-filter="core" aria-pressed="false" aria-controls="vocab-table">Core grammar</button>
+            <button type="button" data-theme-filter="people" aria-pressed="false" aria-controls="vocab-table">People</button>
+            <button type="button" data-theme-filter="time" aria-pressed="false" aria-controls="vocab-table">Time &amp; number</button>
+            <button type="button" data-theme-filter="place" aria-pressed="false" aria-controls="vocab-table">Places</button>
+            <button type="button" data-theme-filter="action" aria-pressed="false" aria-controls="vocab-table">Actions</button>
+            <button type="button" data-theme-filter="food" aria-pressed="false" aria-controls="vocab-table">Food</button>
+            <button type="button" data-theme-filter="describe" aria-pressed="false" aria-controls="vocab-table">Describing</button>
+            <button type="button" data-theme-filter="social" aria-pressed="false" aria-controls="vocab-table">Everyday phrases</button>
+          </div>
+        </div>
+        <div class="search-field">
+          <label class="filter-label" for="vocab-search">Search characters, pinyin, or English</label>
+          <input id="vocab-search" type="search" autocomplete="off" placeholder="e.g. shui, water, 水" aria-controls="vocab-table">
+        </div>
+      </div>
+      <p class="status" id="vocab-status" role="status" aria-live="polite"></p>
+
+      <div class="table-wrap">
+        <p class="swipe-note">Swipe the table sideways to see every column.</p>
+        <table class="vocab" id="vocab-table">
+          <caption>Starter vocabulary, levels HSK 1 to HSK 3</caption>
+          <thead>
+            <tr><th scope="col">Character <span lang="zh-Hans">汉字</span></th><th scope="col">Pinyin</th><th scope="col">Meaning</th><th scope="col">Level</th><th scope="col">How you use it</th></tr>
+          </thead>
+          <tbody id="vocab-body">
+            <tr data-level="hsk1" data-theme="core" data-search="我 wǒ wo i me"><th scope="row" class="hz" lang="zh-Hans">我</th><td class="py">wǒ</td><td>I, me</td><td class="lv">HSK 1</td><td>Subject of most beginner sentences: 我是学生。</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="你 nǐ ni you"><th scope="row" class="hz" lang="zh-Hans">你</th><td class="py">nǐ</td><td>you (singular)</td><td class="lv">HSK 1</td><td>Polite form is 您 <span class="py">nín</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="他 tā ta he him"><th scope="row" class="hz" lang="zh-Hans">他</th><td class="py">tā</td><td>he, him</td><td class="lv">HSK 1</td><td>Same sound as 她; only the written form differs.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="她 tā ta she her"><th scope="row" class="hz" lang="zh-Hans">她</th><td class="py">tā</td><td>she, her</td><td class="lv">HSK 1</td><td>女 on the left marks the meaning.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="们 men plural suffix"><th scope="row" class="hz" lang="zh-Hans">们</th><td class="py">men</td><td>plural marker for people</td><td class="lv">HSK 1</td><td>我们 <span class="py">wǒmen</span> we, 他们 <span class="py">tāmen</span> they.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="的 de possessive particle"><th scope="row" class="hz" lang="zh-Hans">的</th><td class="py">de</td><td>possessive / modifier particle</td><td class="lv">HSK 1</td><td>我的书 <span class="py">wǒ de shū</span>, my book.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="是 shì shi to be am is are"><th scope="row" class="hz" lang="zh-Hans">是</th><td class="py">shì</td><td>to be (A is B)</td><td class="lv">HSK 1</td><td>Links two nouns only, never a noun and an adjective.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="不 bù bu not no"><th scope="row" class="hz" lang="zh-Hans">不</th><td class="py">bù</td><td>not (general negation)</td><td class="lv">HSK 1</td><td>Said <span class="py">bú</span> before a fourth tone: 不是 <span class="py">bú shì</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="有 yǒu you to have there is"><th scope="row" class="hz" lang="zh-Hans">有</th><td class="py">yǒu</td><td>to have; there is</td><td class="lv">HSK 1</td><td>Negated only with 没 <span class="py">méi</span>: 没有.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="没 méi mei not have did not"><th scope="row" class="hz" lang="zh-Hans">没</th><td class="py">méi</td><td>not (with 有, and past actions)</td><td class="lv">HSK 1</td><td>没吃 <span class="py">méi chī</span>, did not eat.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="在 zài zai at in located"><th scope="row" class="hz" lang="zh-Hans">在</th><td class="py">zài</td><td>at, in; to be located</td><td class="lv">HSK 1</td><td>我在家。<span class="py">Wǒ zài jiā.</span> I am at home.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="了 le completed change"><th scope="row" class="hz" lang="zh-Hans">了</th><td class="py">le</td><td>completion / change of state</td><td class="lv">HSK 1</td><td>Two separate uses; see the grammar section.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="很 hěn hen very"><th scope="row" class="hz" lang="zh-Hans">很</th><td class="py">hěn</td><td>very (and default adjective link)</td><td class="lv">HSK 1</td><td>她很忙。<span class="py">Tā hěn máng.</span> She is busy.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="也 yě ye also too"><th scope="row" class="hz" lang="zh-Hans">也</th><td class="py">yě</td><td>also, too</td><td class="lv">HSK 1</td><td>Goes before the verb, never at the end.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="都 dōu dou all both"><th scope="row" class="hz" lang="zh-Hans">都</th><td class="py">dōu</td><td>all, both</td><td class="lv">HSK 1</td><td>我们都去。<span class="py">Wǒmen dōu qù.</span> We all go.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="吗 ma question particle"><th scope="row" class="hz" lang="zh-Hans">吗</th><td class="py">ma</td><td>yes/no question particle</td><td class="lv">HSK 1</td><td>Add to any statement: 你好吗?</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="呢 ne and what about"><th scope="row" class="hz" lang="zh-Hans">呢</th><td class="py">ne</td><td>and you? / what about…?</td><td class="lv">HSK 1</td><td>我很好，你呢? <span class="py">Wǒ hěn hǎo, nǐ ne?</span></td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="什么 shénme shenme what"><th scope="row" class="hz" lang="zh-Hans">什么</th><td class="py">shénme</td><td>what</td><td class="lv">HSK 1</td><td>Stays where the answer would go: 你叫什么名字?</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="谁 shéi shei who"><th scope="row" class="hz" lang="zh-Hans">谁</th><td class="py">shéi</td><td>who</td><td class="lv">HSK 1</td><td>Also read <span class="py">shuí</span> in formal speech.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="哪儿 nǎr nar where"><th scope="row" class="hz" lang="zh-Hans">哪儿</th><td class="py">nǎr</td><td>where</td><td class="lv">HSK 1</td><td>Southern speakers prefer 哪里 <span class="py">nǎlǐ</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="怎么 zěnme zenme how"><th scope="row" class="hz" lang="zh-Hans">怎么</th><td class="py">zěnme</td><td>how</td><td class="lv">HSK 1</td><td>怎么走? <span class="py">Zěnme zǒu?</span> How do I get there?</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="几 jǐ ji how many"><th scope="row" class="hz" lang="zh-Hans">几</th><td class="py">jǐ</td><td>how many (small numbers)</td><td class="lv">HSK 1</td><td>Always takes a measure word: 几个人?</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="多少 duōshao duoshao how many how much"><th scope="row" class="hz" lang="zh-Hans">多少</th><td class="py">duōshao</td><td>how many, how much</td><td class="lv">HSK 1</td><td>Used for larger numbers and prices.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="个 gè ge measure word"><th scope="row" class="hz" lang="zh-Hans">个</th><td class="py">gè</td><td>general measure word</td><td class="lv">HSK 1</td><td>Often said neutral: 一个人 <span class="py">yí ge rén</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="和 hé he and with"><th scope="row" class="hz" lang="zh-Hans">和</th><td class="py">hé</td><td>and (joins nouns)</td><td class="lv">HSK 1</td><td>Never joins two sentences.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="这 zhè zhe this"><th scope="row" class="hz" lang="zh-Hans">这</th><td class="py">zhè</td><td>this</td><td class="lv">HSK 1</td><td>这个 <span class="py">zhège</span>, this one.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="那 nà na that"><th scope="row" class="hz" lang="zh-Hans">那</th><td class="py">nà</td><td>that</td><td class="lv">HSK 1</td><td>那个 <span class="py">nàge</span>, that one.</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="会 huì hui can know how will"><th scope="row" class="hz" lang="zh-Hans">会</th><td class="py">huì</td><td>can (learned skill); will</td><td class="lv">HSK 1</td><td>我会说汉语。<span class="py">Wǒ huì shuō Hànyǔ.</span></td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="能 néng neng can able"><th scope="row" class="hz" lang="zh-Hans">能</th><td class="py">néng</td><td>can (circumstances allow)</td><td class="lv">HSK 1</td><td>今天我不能来。</td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="想 xiǎng xiang want think miss"><th scope="row" class="hz" lang="zh-Hans">想</th><td class="py">xiǎng</td><td>would like to; to think of</td><td class="lv">HSK 1</td><td>我想喝茶。<span class="py">Wǒ xiǎng hē chá.</span></td></tr>
+            <tr data-level="hsk1" data-theme="core" data-search="要 yào yao want need will"><th scope="row" class="hz" lang="zh-Hans">要</th><td class="py">yào</td><td>to want; to be going to</td><td class="lv">HSK 1</td><td>Stronger and more definite than 想.</td></tr>
+            <tr data-level="hsk1" data-theme="social" data-search="请 qǐng qing please invite"><th scope="row" class="hz" lang="zh-Hans">请</th><td class="py">qǐng</td><td>please; to invite</td><td class="lv">HSK 1</td><td>请坐。<span class="py">Qǐng zuò.</span> Please sit.</td></tr>
+            <tr data-level="hsk1" data-theme="people" data-search="人 rén ren person people"><th scope="row" class="hz" lang="zh-Hans">人</th><td class="py">rén</td><td>person</td><td class="lv">HSK 1</td><td>中国人 <span class="py">Zhōngguórén</span>, a Chinese person.</td></tr>
+            <tr data-level="hsk1" data-theme="people" data-search="老师 lǎoshī laoshi teacher"><th scope="row" class="hz" lang="zh-Hans">老师</th><td class="py">lǎoshī</td><td>teacher</td><td class="lv">HSK 1</td><td>Used as a title: 王老师.</td></tr>
+            <tr data-level="hsk1" data-theme="people" data-search="学生 xuésheng xuesheng student"><th scope="row" class="hz" lang="zh-Hans">学生</th><td class="py">xuésheng</td><td>student</td><td class="lv">HSK 1</td><td>Second syllable is neutral tone.</td></tr>
+            <tr data-level="hsk1" data-theme="people" data-search="朋友 péngyou pengyou friend"><th scope="row" class="hz" lang="zh-Hans">朋友</th><td class="py">péngyou</td><td>friend</td><td class="lv">HSK 1</td><td>我的朋友 <span class="py">wǒ de péngyou</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="people" data-search="名字 míngzi mingzi name"><th scope="row" class="hz" lang="zh-Hans">名字</th><td class="py">míngzi</td><td>name</td><td class="lv">HSK 1</td><td>你叫什么名字? asks someone's name.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="今天 jīntiān jintian today"><th scope="row" class="hz" lang="zh-Hans">今天</th><td class="py">jīntiān</td><td>today</td><td class="lv">HSK 1</td><td>Time words come before the verb.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="明天 míngtiān mingtian tomorrow"><th scope="row" class="hz" lang="zh-Hans">明天</th><td class="py">míngtiān</td><td>tomorrow</td><td class="lv">HSK 1</td><td>明天见。<span class="py">Míngtiān jiàn.</span> See you tomorrow.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="昨天 zuótiān zuotian yesterday"><th scope="row" class="hz" lang="zh-Hans">昨天</th><td class="py">zuótiān</td><td>yesterday</td><td class="lv">HSK 1</td><td>Pairs naturally with 了.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="现在 xiànzài xianzai now"><th scope="row" class="hz" lang="zh-Hans">现在</th><td class="py">xiànzài</td><td>now</td><td class="lv">HSK 1</td><td>现在几点? <span class="py">Xiànzài jǐ diǎn?</span></td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="星期 xīngqī xingqi week"><th scope="row" class="hz" lang="zh-Hans">星期</th><td class="py">xīngqī</td><td>week</td><td class="lv">HSK 1</td><td>星期一 is Monday, counted by number.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="点 diǎn dian o'clock point"><th scope="row" class="hz" lang="zh-Hans">点</th><td class="py">diǎn</td><td>o'clock; a dot</td><td class="lv">HSK 1</td><td>三点 <span class="py">sān diǎn</span>, three o'clock.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="一 yī yi one 1"><th scope="row" class="hz" lang="zh-Hans">一</th><td class="py">yī</td><td>one</td><td class="lv">HSK 1</td><td>Tone shifts in context: 一个 <span class="py">yí ge</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="二 èr er two 2"><th scope="row" class="hz" lang="zh-Hans">二</th><td class="py">èr</td><td>two</td><td class="lv">HSK 1</td><td>Counting two things uses 两 <span class="py">liǎng</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="time" data-search="十 shí shi ten 10"><th scope="row" class="hz" lang="zh-Hans">十</th><td class="py">shí</td><td>ten</td><td class="lv">HSK 1</td><td>Numbers build regularly: 二十三 = 23.</td></tr>
+            <tr data-level="hsk1" data-theme="place" data-search="家 jiā jia home family"><th scope="row" class="hz" lang="zh-Hans">家</th><td class="py">jiā</td><td>home, family</td><td class="lv">HSK 1</td><td>回家 <span class="py">huí jiā</span>, go home.</td></tr>
+            <tr data-level="hsk1" data-theme="place" data-search="中国 zhōngguó zhongguo china"><th scope="row" class="hz" lang="zh-Hans">中国</th><td class="py">Zhōngguó</td><td>China</td><td class="lv">HSK 1</td><td>Country names are capitalised in pinyin.</td></tr>
+            <tr data-level="hsk1" data-theme="place" data-search="学校 xuéxiào xuexiao school"><th scope="row" class="hz" lang="zh-Hans">学校</th><td class="py">xuéxiào</td><td>school</td><td class="lv">HSK 1</td><td>在学校 <span class="py">zài xuéxiào</span>, at school.</td></tr>
+            <tr data-level="hsk1" data-theme="place" data-search="商店 shāngdiàn shangdian shop store"><th scope="row" class="hz" lang="zh-Hans">商店</th><td class="py">shāngdiàn</td><td>shop</td><td class="lv">HSK 1</td><td>店 <span class="py">diàn</span> recurs in 饭店, 书店.</td></tr>
+            <tr data-level="hsk1" data-theme="place" data-search="医院 yīyuàn yiyuan hospital"><th scope="row" class="hz" lang="zh-Hans">医院</th><td class="py">yīyuàn</td><td>hospital</td><td class="lv">HSK 1</td><td>医生 <span class="py">yīshēng</span> is a doctor.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="去 qù qu go"><th scope="row" class="hz" lang="zh-Hans">去</th><td class="py">qù</td><td>to go</td><td class="lv">HSK 1</td><td>我去学校。Destination follows directly.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="来 lái lai come"><th scope="row" class="hz" lang="zh-Hans">来</th><td class="py">lái</td><td>to come</td><td class="lv">HSK 1</td><td>Direction is judged from the speaker.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="吃 chī chi eat"><th scope="row" class="hz" lang="zh-Hans">吃</th><td class="py">chī</td><td>to eat</td><td class="lv">HSK 1</td><td>口 on the left marks mouth actions.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="喝 hē he drink"><th scope="row" class="hz" lang="zh-Hans">喝</th><td class="py">hē</td><td>to drink</td><td class="lv">HSK 1</td><td>Also has the 口 mouth component.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="看 kàn kan look read watch"><th scope="row" class="hz" lang="zh-Hans">看</th><td class="py">kàn</td><td>to look, read, watch</td><td class="lv">HSK 1</td><td>看书 read a book, 看电视 watch TV.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="说 shuō shuo speak say"><th scope="row" class="hz" lang="zh-Hans">说</th><td class="py">shuō</td><td>to speak, to say</td><td class="lv">HSK 1</td><td>说汉语 <span class="py">shuō Hànyǔ</span>, speak Chinese.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="写 xiě xie write"><th scope="row" class="hz" lang="zh-Hans">写</th><td class="py">xiě</td><td>to write</td><td class="lv">HSK 1</td><td>写字 <span class="py">xiě zì</span>, write characters.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="买 mǎi mai buy"><th scope="row" class="hz" lang="zh-Hans">买</th><td class="py">mǎi</td><td>to buy</td><td class="lv">HSK 1</td><td>Contrast 卖 <span class="py">mài</span>, to sell.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="叫 jiào jiao be called call"><th scope="row" class="hz" lang="zh-Hans">叫</th><td class="py">jiào</td><td>to be called; to call</td><td class="lv">HSK 1</td><td>我叫马丽。<span class="py">Wǒ jiào Mǎ Lì.</span></td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="喜欢 xǐhuan xihuan like"><th scope="row" class="hz" lang="zh-Hans">喜欢</th><td class="py">xǐhuan</td><td>to like</td><td class="lv">HSK 1</td><td>Can be followed by a noun or a verb phrase.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="学习 xuéxí xuexi study learn"><th scope="row" class="hz" lang="zh-Hans">学习</th><td class="py">xuéxí</td><td>to study, to learn</td><td class="lv">HSK 1</td><td>学习汉语 <span class="py">xuéxí Hànyǔ</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="action" data-search="工作 gōngzuò gongzuo work job"><th scope="row" class="hz" lang="zh-Hans">工作</th><td class="py">gōngzuò</td><td>to work; a job</td><td class="lv">HSK 1</td><td>Works as both verb and noun.</td></tr>
+            <tr data-level="hsk1" data-theme="food" data-search="水 shuǐ shui water"><th scope="row" class="hz" lang="zh-Hans">水</th><td class="py">shuǐ</td><td>water</td><td class="lv">HSK 1</td><td>Its squeezed form 氵 marks liquid words.</td></tr>
+            <tr data-level="hsk1" data-theme="food" data-search="茶 chá cha tea"><th scope="row" class="hz" lang="zh-Hans">茶</th><td class="py">chá</td><td>tea</td><td class="lv">HSK 1</td><td>喝茶 <span class="py">hē chá</span>, drink tea.</td></tr>
+            <tr data-level="hsk1" data-theme="food" data-search="米饭 mǐfàn mifan rice"><th scope="row" class="hz" lang="zh-Hans">米饭</th><td class="py">mǐfàn</td><td>cooked rice</td><td class="lv">HSK 1</td><td>吃饭 <span class="py">chī fàn</span> means to have a meal.</td></tr>
+            <tr data-level="hsk1" data-theme="food" data-search="菜 cài cai dish vegetable"><th scope="row" class="hz" lang="zh-Hans">菜</th><td class="py">cài</td><td>dish; vegetable</td><td class="lv">HSK 1</td><td>点菜 <span class="py">diǎn cài</span>, order food.</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="好 hǎo hao good well"><th scope="row" class="hz" lang="zh-Hans">好</th><td class="py">hǎo</td><td>good, well</td><td class="lv">HSK 1</td><td>Built from 女 woman and 子 child.</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="大 dà da big"><th scope="row" class="hz" lang="zh-Hans">大</th><td class="py">dà</td><td>big</td><td class="lv">HSK 1</td><td>很大 <span class="py">hěn dà</span>, big (no 是).</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="小 xiǎo xiao small"><th scope="row" class="hz" lang="zh-Hans">小</th><td class="py">xiǎo</td><td>small</td><td class="lv">HSK 1</td><td>小心 <span class="py">xiǎoxīn</span>, be careful.</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="多 duō duo many much"><th scope="row" class="hz" lang="zh-Hans">多</th><td class="py">duō</td><td>many, much</td><td class="lv">HSK 1</td><td>Needs 很 or another adverb before a noun phrase.</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="热 rè re hot"><th scope="row" class="hz" lang="zh-Hans">热</th><td class="py">rè</td><td>hot</td><td class="lv">HSK 1</td><td>今天很热。<span class="py">Jīntiān hěn rè.</span></td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="冷 lěng leng cold"><th scope="row" class="hz" lang="zh-Hans">冷</th><td class="py">lěng</td><td>cold</td><td class="lv">HSK 1</td><td>The 冫 component marks ice and cold.</td></tr>
+            <tr data-level="hsk1" data-theme="describe" data-search="高兴 gāoxìng gaoxing happy glad"><th scope="row" class="hz" lang="zh-Hans">高兴</th><td class="py">gāoxìng</td><td>happy, glad</td><td class="lv">HSK 1</td><td>认识你很高兴。Pleased to meet you.</td></tr>
+            <tr data-level="hsk1" data-theme="social" data-search="谢谢 xièxie xiexie thanks thank you"><th scope="row" class="hz" lang="zh-Hans">谢谢</th><td class="py">xièxie</td><td>thank you</td><td class="lv">HSK 1</td><td>Reply with 不客气 <span class="py">bú kèqi</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="social" data-search="对不起 duìbuqǐ duibuqi sorry"><th scope="row" class="hz" lang="zh-Hans">对不起</th><td class="py">duìbuqǐ</td><td>sorry</td><td class="lv">HSK 1</td><td>Reply with 没关系 <span class="py">méi guānxi</span>.</td></tr>
+            <tr data-level="hsk1" data-theme="social" data-search="再见 zàijiàn zaijian goodbye"><th scope="row" class="hz" lang="zh-Hans">再见</th><td class="py">zàijiàn</td><td>goodbye</td><td class="lv">HSK 1</td><td>Literally "again see".</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="因为 yīnwèi yinwei because"><th scope="row" class="hz" lang="zh-Hans">因为</th><td class="py">yīnwèi</td><td>because</td><td class="lv">HSK 2</td><td>Pairs with 所以 <span class="py">suǒyǐ</span>, so.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="所以 suǒyǐ suoyi so therefore"><th scope="row" class="hz" lang="zh-Hans">所以</th><td class="py">suǒyǐ</td><td>so, therefore</td><td class="lv">HSK 2</td><td>Chinese keeps both halves of the pair.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="但是 dànshì danshi but"><th scope="row" class="hz" lang="zh-Hans">但是</th><td class="py">dànshì</td><td>but</td><td class="lv">HSK 2</td><td>Joins clauses, unlike 和.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="还 hái hai still also"><th scope="row" class="hz" lang="zh-Hans">还</th><td class="py">hái</td><td>still; in addition</td><td class="lv">HSK 2</td><td>Placed before the verb like 也 and 都.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="就 jiù jiu then right away"><th scope="row" class="hz" lang="zh-Hans">就</th><td class="py">jiù</td><td>then, right away</td><td class="lv">HSK 2</td><td>我马上就来。I am coming right now.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="可以 kěyǐ keyi may can allowed"><th scope="row" class="hz" lang="zh-Hans">可以</th><td class="py">kěyǐ</td><td>may, be allowed to</td><td class="lv">HSK 2</td><td>可以吗? asks permission politely.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="比 bǐ bi compare than"><th scope="row" class="hz" lang="zh-Hans">比</th><td class="py">bǐ</td><td>than (comparison)</td><td class="lv">HSK 2</td><td>A 比 B + adjective, with no 很.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="从 cóng cong from"><th scope="row" class="hz" lang="zh-Hans">从</th><td class="py">cóng</td><td>from</td><td class="lv">HSK 2</td><td>从…到… <span class="py">cóng…dào…</span>, from…to….</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="到 dào dao to arrive until"><th scope="row" class="hz" lang="zh-Hans">到</th><td class="py">dào</td><td>to arrive; up to</td><td class="lv">HSK 2</td><td>Also a result ending: 看到 <span class="py">kàndào</span>, to see.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="给 gěi gei give for"><th scope="row" class="hz" lang="zh-Hans">给</th><td class="py">gěi</td><td>to give; for someone</td><td class="lv">HSK 2</td><td>给我打电话。Call me.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="跟 gēn gen with follow"><th scope="row" class="hz" lang="zh-Hans">跟</th><td class="py">gēn</td><td>with, along with</td><td class="lv">HSK 2</td><td>跟朋友一起去 go together with a friend.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="过 guo guò experience past"><th scope="row" class="hz" lang="zh-Hans">过</th><td class="py">guo</td><td>have ever done (experience)</td><td class="lv">HSK 2</td><td>我去过中国。I have been to China.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="正在 zhèngzài zhengzai in the middle of"><th scope="row" class="hz" lang="zh-Hans">正在</th><td class="py">zhèngzài</td><td>in the middle of doing</td><td class="lv">HSK 2</td><td>他正在吃饭。He is eating right now.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="一起 yìqǐ yiqi together"><th scope="row" class="hz" lang="zh-Hans">一起</th><td class="py">yìqǐ</td><td>together</td><td class="lv">HSK 2</td><td>Sits before the verb: 一起去.</td></tr>
+            <tr data-level="hsk2" data-theme="core" data-search="真 zhēn zhen really true"><th scope="row" class="hz" lang="zh-Hans">真</th><td class="py">zhēn</td><td>really, truly</td><td class="lv">HSK 2</td><td>真好! Stronger and more emotional than 很.</td></tr>
+            <tr data-level="hsk2" data-theme="people" data-search="孩子 háizi haizi child"><th scope="row" class="hz" lang="zh-Hans">孩子</th><td class="py">háizi</td><td>child</td><td class="lv">HSK 2</td><td>子 here is a neutral-tone suffix.</td></tr>
+            <tr data-level="hsk2" data-theme="people" data-search="妻子 qīzi qizi wife"><th scope="row" class="hz" lang="zh-Hans">妻子</th><td class="py">qīzi</td><td>wife</td><td class="lv">HSK 2</td><td>丈夫 <span class="py">zhàngfu</span> is husband.</td></tr>
+            <tr data-level="hsk2" data-theme="people" data-search="姐姐 jiějie jiejie older sister"><th scope="row" class="hz" lang="zh-Hans">姐姐</th><td class="py">jiějie</td><td>older sister</td><td class="lv">HSK 2</td><td>Family words distinguish older and younger.</td></tr>
+            <tr data-level="hsk2" data-theme="time" data-search="时间 shíjiān shijian time"><th scope="row" class="hz" lang="zh-Hans">时间</th><td class="py">shíjiān</td><td>time</td><td class="lv">HSK 2</td><td>有时间吗? Do you have time?</td></tr>
+            <tr data-level="hsk2" data-theme="time" data-search="小时 xiǎoshí xiaoshi hour"><th scope="row" class="hz" lang="zh-Hans">小时</th><td class="py">xiǎoshí</td><td>hour (duration)</td><td class="lv">HSK 2</td><td>Duration goes after the verb.</td></tr>
+            <tr data-level="hsk2" data-theme="time" data-search="每 měi mei every each"><th scope="row" class="hz" lang="zh-Hans">每</th><td class="py">měi</td><td>every, each</td><td class="lv">HSK 2</td><td>每天 <span class="py">měi tiān</span>, every day.</td></tr>
+            <tr data-level="hsk2" data-theme="place" data-search="房间 fángjiān fangjian room"><th scope="row" class="hz" lang="zh-Hans">房间</th><td class="py">fángjiān</td><td>room</td><td class="lv">HSK 2</td><td>在房间里 <span class="py">zài fángjiān lǐ</span>, in the room.</td></tr>
+            <tr data-level="hsk2" data-theme="place" data-search="旁边 pángbiān pangbian beside next to"><th scope="row" class="hz" lang="zh-Hans">旁边</th><td class="py">pángbiān</td><td>beside, next to</td><td class="lv">HSK 2</td><td>Position words follow the noun.</td></tr>
+            <tr data-level="hsk2" data-theme="place" data-search="机场 jīchǎng jichang airport"><th scope="row" class="hz" lang="zh-Hans">机场</th><td class="py">jīchǎng</td><td>airport</td><td class="lv">HSK 2</td><td>飞机 <span class="py">fēijī</span> is aeroplane.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="开始 kāishǐ kaishi begin start"><th scope="row" class="hz" lang="zh-Hans">开始</th><td class="py">kāishǐ</td><td>to begin</td><td class="lv">HSK 2</td><td>开始学习 start studying.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="帮助 bāngzhù bangzhu help"><th scope="row" class="hz" lang="zh-Hans">帮助</th><td class="py">bāngzhù</td><td>to help</td><td class="lv">HSK 2</td><td>请帮助我。Please help me.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="等 děng deng wait"><th scope="row" class="hz" lang="zh-Hans">等</th><td class="py">děng</td><td>to wait</td><td class="lv">HSK 2</td><td>等一下 <span class="py">děng yíxià</span>, wait a moment.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="找 zhǎo zhao look for find"><th scope="row" class="hz" lang="zh-Hans">找</th><td class="py">zhǎo</td><td>to look for</td><td class="lv">HSK 2</td><td>找到 <span class="py">zhǎodào</span> means to find successfully.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="告诉 gàosu gaosu tell"><th scope="row" class="hz" lang="zh-Hans">告诉</th><td class="py">gàosu</td><td>to tell</td><td class="lv">HSK 2</td><td>告诉我 <span class="py">gàosu wǒ</span>, tell me.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="知道 zhīdào zhidao know"><th scope="row" class="hz" lang="zh-Hans">知道</th><td class="py">zhīdào</td><td>to know (a fact)</td><td class="lv">HSK 2</td><td>我不知道。I do not know.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="觉得 juéde juede feel think"><th scope="row" class="hz" lang="zh-Hans">觉得</th><td class="py">juéde</td><td>to feel, to think</td><td class="lv">HSK 2</td><td>Followed by a whole clause.</td></tr>
+            <tr data-level="hsk2" data-theme="action" data-search="希望 xīwàng xiwang hope"><th scope="row" class="hz" lang="zh-Hans">希望</th><td class="py">xīwàng</td><td>to hope</td><td class="lv">HSK 2</td><td>我希望你来。I hope you come.</td></tr>
+            <tr data-level="hsk2" data-theme="food" data-search="鸡蛋 jīdàn jidan egg"><th scope="row" class="hz" lang="zh-Hans">鸡蛋</th><td class="py">jīdàn</td><td>egg</td><td class="lv">HSK 2</td><td>Menus stack familiar characters like this.</td></tr>
+            <tr data-level="hsk2" data-theme="food" data-search="牛奶 niúnǎi niunai milk"><th scope="row" class="hz" lang="zh-Hans">牛奶</th><td class="py">niúnǎi</td><td>milk</td><td class="lv">HSK 2</td><td>牛 <span class="py">niú</span> is cow.</td></tr>
+            <tr data-level="hsk2" data-theme="food" data-search="羊肉 yángròu yangrou lamb mutton"><th scope="row" class="hz" lang="zh-Hans">羊肉</th><td class="py">yángròu</td><td>lamb</td><td class="lv">HSK 2</td><td>肉 <span class="py">ròu</span> means meat on menus.</td></tr>
+            <tr data-level="hsk2" data-theme="describe" data-search="累 lèi lei tired"><th scope="row" class="hz" lang="zh-Hans">累</th><td class="py">lèi</td><td>tired</td><td class="lv">HSK 2</td><td>我很累。<span class="py">Wǒ hěn lèi.</span></td></tr>
+            <tr data-level="hsk2" data-theme="describe" data-search="慢 màn man slow"><th scope="row" class="hz" lang="zh-Hans">慢</th><td class="py">màn</td><td>slow</td><td class="lv">HSK 2</td><td>请说慢一点儿。Please speak a bit slower.</td></tr>
+            <tr data-level="hsk2" data-theme="describe" data-search="快 kuài kuai fast soon"><th scope="row" class="hz" lang="zh-Hans">快</th><td class="py">kuài</td><td>fast; soon</td><td class="lv">HSK 2</td><td>快点儿! Hurry up!</td></tr>
+            <tr data-level="hsk2" data-theme="describe" data-search="便宜 piányi pianyi cheap"><th scope="row" class="hz" lang="zh-Hans">便宜</th><td class="py">piányi</td><td>cheap</td><td class="lv">HSK 2</td><td>贵 <span class="py">guì</span> is the opposite.</td></tr>
+            <tr data-level="hsk2" data-theme="social" data-search="不客气 búkèqi bukeqi you're welcome"><th scope="row" class="hz" lang="zh-Hans">不客气</th><td class="py">bú kèqi</td><td>you are welcome</td><td class="lv">HSK 2</td><td>Standard reply to 谢谢.</td></tr>
+            <tr data-level="hsk2" data-theme="social" data-search="没关系 méiguānxi meiguanxi it doesn't matter"><th scope="row" class="hz" lang="zh-Hans">没关系</th><td class="py">méi guānxi</td><td>it does not matter</td><td class="lv">HSK 2</td><td>Standard reply to 对不起.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="虽然 suīrán suiran although"><th scope="row" class="hz" lang="zh-Hans">虽然</th><td class="py">suīrán</td><td>although</td><td class="lv">HSK 3</td><td>Pairs with 但是 in the second clause.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="如果 rúguǒ ruguo if"><th scope="row" class="hz" lang="zh-Hans">如果</th><td class="py">rúguǒ</td><td>if</td><td class="lv">HSK 3</td><td>如果…就… <span class="py">rúguǒ…jiù…</span>.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="一边 yìbiān yibian while at the same time"><th scope="row" class="hz" lang="zh-Hans">一边</th><td class="py">yìbiān</td><td>while doing (two actions)</td><td class="lv">HSK 3</td><td>一边吃一边说 talk while eating.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="把 bǎ ba disposal marker"><th scope="row" class="hz" lang="zh-Hans">把</th><td class="py">bǎ</td><td>moves the object before the verb</td><td class="lv">HSK 3</td><td>把书给我。Hand me the book.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="被 bèi bei passive by"><th scope="row" class="hz" lang="zh-Hans">被</th><td class="py">bèi</td><td>passive marker, by</td><td class="lv">HSK 3</td><td>Used far less often than English passives.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="又 yòu you again already happened"><th scope="row" class="hz" lang="zh-Hans">又</th><td class="py">yòu</td><td>again (already happened)</td><td class="lv">HSK 3</td><td>再 <span class="py">zài</span> is again in the future.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="其实 qíshí qishi actually"><th scope="row" class="hz" lang="zh-Hans">其实</th><td class="py">qíshí</td><td>actually</td><td class="lv">HSK 3</td><td>Opens a sentence to soften a correction.</td></tr>
+            <tr data-level="hsk3" data-theme="core" data-search="别 bié bie don't"><th scope="row" class="hz" lang="zh-Hans">别</th><td class="py">bié</td><td>do not (command)</td><td class="lv">HSK 3</td><td>别担心。<span class="py">Bié dānxīn.</span> Do not worry.</td></tr>
+            <tr data-level="hsk3" data-theme="people" data-search="同事 tóngshì tongshi colleague"><th scope="row" class="hz" lang="zh-Hans">同事</th><td class="py">tóngshì</td><td>colleague</td><td class="lv">HSK 3</td><td>同学 <span class="py">tóngxué</span> is classmate.</td></tr>
+            <tr data-level="hsk3" data-theme="people" data-search="邻居 línjū linju neighbour neighbor"><th scope="row" class="hz" lang="zh-Hans">邻居</th><td class="py">línjū</td><td>neighbour</td><td class="lv">HSK 3</td><td>Common in everyday small talk.</td></tr>
+            <tr data-level="hsk3" data-theme="time" data-search="以前 yǐqián yiqian before previously"><th scope="row" class="hz" lang="zh-Hans">以前</th><td class="py">yǐqián</td><td>before, previously</td><td class="lv">HSK 3</td><td>Follows the event it refers to: 吃饭以前.</td></tr>
+            <tr data-level="hsk3" data-theme="time" data-search="以后 yǐhòu yihou after later"><th scope="row" class="hz" lang="zh-Hans">以后</th><td class="py">yǐhòu</td><td>after, later</td><td class="lv">HSK 3</td><td>下班以后 after finishing work.</td></tr>
+            <tr data-level="hsk3" data-theme="time" data-search="终于 zhōngyú zhongyu finally"><th scope="row" class="hz" lang="zh-Hans">终于</th><td class="py">zhōngyú</td><td>finally</td><td class="lv">HSK 3</td><td>Marks a long-awaited outcome.</td></tr>
+            <tr data-level="hsk3" data-theme="place" data-search="附近 fùjìn fujin nearby"><th scope="row" class="hz" lang="zh-Hans">附近</th><td class="py">fùjìn</td><td>nearby</td><td class="lv">HSK 3</td><td>附近有银行吗? Is there a bank nearby?</td></tr>
+            <tr data-level="hsk3" data-theme="place" data-search="地方 dìfang difang place"><th scope="row" class="hz" lang="zh-Hans">地方</th><td class="py">dìfang</td><td>place</td><td class="lv">HSK 3</td><td>这个地方很安静。This place is quiet.</td></tr>
+            <tr data-level="hsk3" data-theme="place" data-search="银行 yínháng yinhang bank"><th scope="row" class="hz" lang="zh-Hans">银行</th><td class="py">yínháng</td><td>bank</td><td class="lv">HSK 3</td><td>行 is read <span class="py">háng</span> here, not <span class="py">xíng</span>.</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="需要 xūyào xuyao need"><th scope="row" class="hz" lang="zh-Hans">需要</th><td class="py">xūyào</td><td>to need</td><td class="lv">HSK 3</td><td>你需要帮助吗? Do you need help?</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="决定 juédìng jueding decide"><th scope="row" class="hz" lang="zh-Hans">决定</th><td class="py">juédìng</td><td>to decide</td><td class="lv">HSK 3</td><td>Also a noun: 一个决定, a decision.</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="习惯 xíguàn xiguan habit be used to"><th scope="row" class="hz" lang="zh-Hans">习惯</th><td class="py">xíguàn</td><td>habit; to be used to</td><td class="lv">HSK 3</td><td>我习惯早起。I am used to getting up early.</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="记得 jìde jide remember"><th scope="row" class="hz" lang="zh-Hans">记得</th><td class="py">jìde</td><td>to remember</td><td class="lv">HSK 3</td><td>忘记 <span class="py">wàngjì</span> is to forget.</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="练习 liànxí lianxi practise practice"><th scope="row" class="hz" lang="zh-Hans">练习</th><td class="py">liànxí</td><td>to practise; an exercise</td><td class="lv">HSK 3</td><td>练习写字 practise writing characters.</td></tr>
+            <tr data-level="hsk3" data-theme="action" data-search="解决 jiějué jiejue solve"><th scope="row" class="hz" lang="zh-Hans">解决</th><td class="py">jiějué</td><td>to solve</td><td class="lv">HSK 3</td><td>解决问题 <span class="py">jiějué wèntí</span>.</td></tr>
+            <tr data-level="hsk3" data-theme="food" data-search="早餐 zǎocān zaocan breakfast"><th scope="row" class="hz" lang="zh-Hans">早餐</th><td class="py">zǎocān</td><td>breakfast</td><td class="lv">HSK 3</td><td>早饭 <span class="py">zǎofàn</span> is the spoken form.</td></tr>
+            <tr data-level="hsk3" data-theme="food" data-search="饮料 yǐnliào yinliao drink beverage"><th scope="row" class="hz" lang="zh-Hans">饮料</th><td class="py">yǐnliào</td><td>drink, beverage</td><td class="lv">HSK 3</td><td>Common on menus and in shops.</td></tr>
+            <tr data-level="hsk3" data-theme="describe" data-search="舒服 shūfu shufu comfortable"><th scope="row" class="hz" lang="zh-Hans">舒服</th><td class="py">shūfu</td><td>comfortable, well</td><td class="lv">HSK 3</td><td>不舒服 means feeling unwell.</td></tr>
+            <tr data-level="hsk3" data-theme="describe" data-search="安静 ānjìng anjing quiet"><th scope="row" class="hz" lang="zh-Hans">安静</th><td class="py">ānjìng</td><td>quiet</td><td class="lv">HSK 3</td><td>请安静。Please be quiet.</td></tr>
+            <tr data-level="hsk3" data-theme="describe" data-search="重要 zhòngyào zhongyao important"><th scope="row" class="hz" lang="zh-Hans">重要</th><td class="py">zhòngyào</td><td>important</td><td class="lv">HSK 3</td><td>很重要 <span class="py">hěn zhòngyào</span>.</td></tr>
+            <tr data-level="hsk3" data-theme="describe" data-search="容易 róngyì rongyi easy"><th scope="row" class="hz" lang="zh-Hans">容易</th><td class="py">róngyì</td><td>easy</td><td class="lv">HSK 3</td><td>难 <span class="py">nán</span> is difficult.</td></tr>
+            <tr data-level="hsk3" data-theme="social" data-search="欢迎 huānyíng huanying welcome"><th scope="row" class="hz" lang="zh-Hans">欢迎</th><td class="py">huānyíng</td><td>welcome</td><td class="lv">HSK 3</td><td>欢迎光临 greets you in shops.</td></tr>
+            <tr data-level="hsk3" data-theme="social" data-search="辛苦了 xīnkǔle xinkule thanks for your effort"><th scope="row" class="hz" lang="zh-Hans">辛苦了</th><td class="py">xīnkǔ le</td><td>thanks for your hard work</td><td class="lv">HSK 3</td><td>Said to someone who has just finished a task.</td></tr>
+            <tr class="empty-row" id="vocab-empty" hidden><td colspan="5">No entries match those filters. Clear the search box or choose <strong>All levels</strong>.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="caveat"><p><strong>Caveat · editorial selection</strong>This 148-item table is a teaching subset, not an official list. Level labels follow the published HSK 3.0 band that a word belongs to, but no vocabulary list of this size can be exhaustive, and HSK 2.0 and HSK 3.0 assign some words to different levels. Check the official <span lang="zh-Hans">词汇表</span> before an exam.</p></div>
+    </section>
+
+    <section class="dark-section" id="grammar" aria-labelledby="grammar-title">
+      <div class="section-heading"><span>05</span><div><p class="eyebrow">Sentence patterns</p><h2 id="grammar-title">Twenty structures that unlock conversation</h2></div></div>
+      <p class="lede">Chinese has no verb conjugation, no gender, and no plural agreement. What it has instead is word order and a small set of function words. Learn these twenty frames and you can recombine your vocabulary into thousands of real sentences. Filter by what you want to do.</p>
+
+      <p class="filter-label" id="use-filter-label">Filter by purpose</p>
+      <div class="filters" role="group" aria-labelledby="use-filter-label">
+        <button type="button" data-use-filter="all" aria-pressed="true" aria-controls="pattern-grid">All patterns</button>
+        <button type="button" data-use-filter="state" aria-pressed="false" aria-controls="pattern-grid">Say something</button>
+        <button type="button" data-use-filter="ask" aria-pressed="false" aria-controls="pattern-grid">Ask something</button>
+        <button type="button" data-use-filter="describe" aria-pressed="false" aria-controls="pattern-grid">Describe</button>
+        <button type="button" data-use-filter="time" aria-pressed="false" aria-controls="pattern-grid">Time &amp; sequence</button>
+        <button type="button" data-use-filter="connect" aria-pressed="false" aria-controls="pattern-grid">Connect ideas</button>
+        <button type="button" data-use-filter="polite" aria-pressed="false" aria-controls="pattern-grid">Be polite</button>
+      </div>
+      <p class="status" id="pattern-status" role="status" aria-live="polite"></p>
+
+      <div class="pattern-grid" id="pattern-grid">
+        <article class="card pattern" data-use="state">
+          <h3>1. Subject + verb + object</h3>
+          <p class="structure"><b>S</b> + <b>V</b> + <b>O</b></p>
+          <dl class="example"><dt lang="zh-Hans">我喝茶。</dt><dd class="py">Wǒ hē chá.</dd><dd class="en">I drink tea.</dd></dl>
+          <p>The backbone of the language. Nothing changes for person or tense, so the same three words work for I, you, they, yesterday, and tomorrow.</p>
+        </article>
+        <article class="card pattern" data-use="state">
+          <h3>2. A 是 B — identity</h3>
+          <p class="structure"><b>A</b> + 是 <span class="py">shì</span> + <b>B</b></p>
+          <dl class="example"><dt lang="zh-Hans">他是老师。</dt><dd class="py">Tā shì lǎoshī.</dd><dd class="en">He is a teacher.</dd></dl>
+          <p>是 joins two <em>nouns</em>. Do not use it before an adjective: 我是忙 is wrong.</p>
+        </article>
+        <article class="card pattern" data-use="describe">
+          <h3>3. Subject + 很 + adjective</h3>
+          <p class="structure"><b>S</b> + 很 <span class="py">hěn</span> + <b>adj</b></p>
+          <dl class="example"><dt lang="zh-Hans">今天很热。</dt><dd class="py">Jīntiān hěn rè.</dd><dd class="en">Today is hot.</dd></dl>
+          <p>Adjectives act as verbs. 很 is the default link and is often barely stressed, so it does not really mean "very" here.</p>
+        </article>
+        <article class="card pattern" data-use="state">
+          <h3>4. 有 — have and there is</h3>
+          <p class="structure"><b>S</b> + 有 <span class="py">yǒu</span> + <b>O</b> · negate with 没有</p>
+          <dl class="example"><dt lang="zh-Hans">我有两个孩子。</dt><dd class="py">Wǒ yǒu liǎng ge háizi.</dd><dd class="en">I have two children.</dd></dl>
+          <p>有 is the one verb that is never negated with 不.</p>
+        </article>
+        <article class="card pattern" data-use="state">
+          <h3>5. 在 — location</h3>
+          <p class="structure"><b>S</b> + 在 <span class="py">zài</span> + <b>place</b></p>
+          <dl class="example"><dt lang="zh-Hans">她在学校。</dt><dd class="py">Tā zài xuéxiào.</dd><dd class="en">She is at school.</dd></dl>
+          <p>Used alone it means "to be at". Placed before another verb it means "doing something at": 我在家吃饭。</p>
+        </article>
+        <article class="card pattern" data-use="ask">
+          <h3>6. 吗 — yes/no question</h3>
+          <p class="structure"><b>statement</b> + 吗 <span class="py">ma</span> ?</p>
+          <dl class="example"><dt lang="zh-Hans">你是学生吗?</dt><dd class="py">Nǐ shì xuésheng ma?</dd><dd class="en">Are you a student?</dd></dl>
+          <p>Word order never changes for questions. Add 吗 and keep everything else.</p>
+        </article>
+        <article class="card pattern" data-use="ask">
+          <h3>7. A-not-A question</h3>
+          <p class="structure"><b>V</b> + 不 + <b>V</b></p>
+          <dl class="example"><dt lang="zh-Hans">你去不去?</dt><dd class="py">Nǐ qù bu qù?</dd><dd class="en">Are you going or not?</dd></dl>
+          <p>A neutral alternative to 吗, very common in speech. With 有 it becomes 有没有.</p>
+        </article>
+        <article class="card pattern" data-use="ask">
+          <h3>8. Question words stay in place</h3>
+          <p class="structure"><b>S</b> + <b>V</b> + 什么 / 谁 / 哪儿</p>
+          <dl class="example"><dt lang="zh-Hans">你吃什么?</dt><dd class="py">Nǐ chī shénme?</dd><dd class="en">What are you eating?</dd></dl>
+          <p>The question word sits exactly where the answer will sit. No fronting, no 吗.</p>
+        </article>
+        <article class="card pattern" data-use="describe">
+          <h3>9. 的 — possession and description</h3>
+          <p class="structure"><b>modifier</b> + 的 <span class="py">de</span> + <b>noun</b></p>
+          <dl class="example"><dt lang="zh-Hans">这是我的书。</dt><dd class="py">Zhè shì wǒ de shū.</dd><dd class="en">This is my book.</dd></dl>
+          <p>Anything that describes a noun goes in front of it. Close relationships often drop 的: 我妈妈.</p>
+        </article>
+        <article class="card pattern" data-use="time">
+          <h3>10. Time before the verb</h3>
+          <p class="structure"><b>S</b> + <b>time</b> + <b>V</b> + <b>O</b></p>
+          <dl class="example"><dt lang="zh-Hans">我明天去北京。</dt><dd class="py">Wǒ míngtiān qù Běijīng.</dd><dd class="en">I am going to Beijing tomorrow.</dd></dl>
+          <p>The time word can also open the sentence. It can never go at the end.</p>
+        </article>
+        <article class="card pattern" data-use="time">
+          <h3>11. 了 — completion and change</h3>
+          <p class="structure"><b>V</b> + 了 <span class="py">le</span> · <b>sentence</b> + 了</p>
+          <dl class="example"><dt lang="zh-Hans">我吃了饭。</dt><dd class="py">Wǒ chī le fàn.</dd><dd class="en">I have eaten.</dd></dl>
+          <p>了 is not a past tense. Learn two uses only for now: a completed action, and a new situation (下雨了 — it has started raining).</p>
+        </article>
+        <article class="card pattern" data-use="time">
+          <h3>12. 过 — have ever done</h3>
+          <p class="structure"><b>V</b> + 过 <span class="py">guo</span></p>
+          <dl class="example"><dt lang="zh-Hans">我去过中国。</dt><dd class="py">Wǒ qù guo Zhōngguó.</dd><dd class="en">I have been to China.</dd></dl>
+          <p>Experience at some unspecified point in your life. Negate with 没: 我没去过.</p>
+        </article>
+        <article class="card pattern" data-use="time">
+          <h3>13. 正在 — happening right now</h3>
+          <p class="structure">正在 <span class="py">zhèngzài</span> + <b>V</b></p>
+          <dl class="example"><dt lang="zh-Hans">他正在打电话。</dt><dd class="py">Tā zhèngzài dǎ diànhuà.</dd><dd class="en">He is on the phone right now.</dd></dl>
+          <p>在 alone does the same job in casual speech.</p>
+        </article>
+        <article class="card pattern" data-use="state">
+          <h3>14. Modal verbs: 想 / 要 / 会 / 能 / 可以</h3>
+          <p class="structure"><b>S</b> + <b>modal</b> + <b>V</b> + <b>O</b></p>
+          <dl class="example"><dt lang="zh-Hans">我想喝咖啡。</dt><dd class="py">Wǒ xiǎng hē kāfēi.</dd><dd class="en">I would like to drink coffee.</dd></dl>
+          <p>想 would like, 要 want or will, 会 know how to, 能 physically able, 可以 permitted.</p>
+        </article>
+        <article class="card pattern" data-use="state">
+          <h3>15. 不 versus 没</h3>
+          <p class="structure">不 <span class="py">bù</span> + <b>V</b> · 没 <span class="py">méi</span> + <b>V</b></p>
+          <dl class="example"><dt lang="zh-Hans">我不吃肉。我没吃饭。</dt><dd class="py">Wǒ bù chī ròu. Wǒ méi chī fàn.</dd><dd class="en">I do not eat meat. I have not eaten.</dd></dl>
+          <p>不 for habits, preferences, and the future. 没 for things that did not happen.</p>
+        </article>
+        <article class="card pattern" data-use="describe">
+          <h3>16. 也 and 都 sit before the verb</h3>
+          <p class="structure"><b>S</b> + 也 / 都 + <b>V</b></p>
+          <dl class="example"><dt lang="zh-Hans">我们都是学生。</dt><dd class="py">Wǒmen dōu shì xuésheng.</dd><dd class="en">We are all students.</dd></dl>
+          <p>Never place these at the end of a sentence, and 都 always follows the group it refers to.</p>
+        </article>
+        <article class="card pattern" data-use="describe">
+          <h3>17. Number + measure word + noun</h3>
+          <p class="structure"><b>number</b> + <b>MW</b> + <b>noun</b></p>
+          <dl class="example"><dt lang="zh-Hans">三个人，两杯茶</dt><dd class="py">sān ge rén, liǎng bēi chá</dd><dd class="en">three people, two cups of tea</dd></dl>
+          <p>You can never count a noun directly. 个 works for most things while you learn the specific ones.</p>
+        </article>
+        <article class="card pattern" data-use="describe">
+          <h3>18. 比 — comparison</h3>
+          <p class="structure"><b>A</b> + 比 <span class="py">bǐ</span> + <b>B</b> + <b>adj</b></p>
+          <dl class="example"><dt lang="zh-Hans">今天比昨天热。</dt><dd class="py">Jīntiān bǐ zuótiān rè.</dd><dd class="en">Today is hotter than yesterday.</dd></dl>
+          <p>Drop 很 in comparisons. There is no separate comparative form of the adjective.</p>
+        </article>
+        <article class="card pattern" data-use="connect">
+          <h3>19. Paired connectors</h3>
+          <p class="structure">因为…所以… · 虽然…但是… · 如果…就…</p>
+          <dl class="example"><dt lang="zh-Hans">虽然很难，但是很有意思。</dt><dd class="py">Suīrán hěn nán, dànshì hěn yǒu yìsi.</dd><dd class="en">Although it is hard, it is interesting.</dd></dl>
+          <p>Unlike English, Chinese normally keeps both halves of the pair.</p>
+        </article>
+        <article class="card pattern" data-use="polite">
+          <h3>20. 请 and 吧 — softening</h3>
+          <p class="structure">请 <span class="py">qǐng</span> + <b>V</b> · <b>sentence</b> + 吧 <span class="py">ba</span></p>
+          <dl class="example"><dt lang="zh-Hans">请坐吧。</dt><dd class="py">Qǐng zuò ba.</dd><dd class="en">Please, do have a seat.</dd></dl>
+          <p>请 makes a request polite; 吧 turns an order into a suggestion. Reduplicating a verb softens it too: 看看 <span class="py">kànkan</span>, have a quick look.</p>
+        </article>
+      </div>
+      <div class="caveat"><p><strong>Caveat · level labels</strong>The order of these patterns follows common teaching sequences, including the Chinese Grammar Wiki's A1/A2 grading, which is a publisher's editorial judgement rather than an official syllabus. Individual textbooks and the HSK bands introduce these structures in slightly different orders.</p></div>
+    </section>
+
+    <section class="paper-section" id="practice" aria-labelledby="practice-title">
+      <div class="section-heading"><span>06</span><div><p class="eyebrow">Practical examples</p><h2 id="practice-title">Put it together: three real exchanges</h2></div></div>
+      <p class="lede">Every word below appears in the vocabulary table and every sentence uses one of the twenty patterns. Read each line aloud, then cover the pinyin and read the characters only.</p>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>A. Meeting someone</h3>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 你好! 你叫什么名字?</dt><dd class="py">Nǐ hǎo! Nǐ jiào shénme míngzi?</dd><dd class="en">Hello! What is your name?</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">B</b> 我叫小李。你呢?</dt><dd class="py">Wǒ jiào Xiǎo Lǐ. Nǐ ne?</dd><dd class="en">I am Xiao Li. And you?</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 我叫马丁。认识你很高兴。</dt><dd class="py">Wǒ jiào Mǎdīng. Rènshi nǐ hěn gāoxìng.</dd><dd class="en">I am Martin. Pleased to meet you.</dd></dl>
+          <p><b>Patterns used:</b> question words in place (8), 的-free naming with 叫, 很 + adjective (3), 呢 for "and you?".</p>
+        </article>
+        <article class="card">
+          <h3>B. Ordering in a shop</h3>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 你好，我要一杯茶。</dt><dd class="py">Nǐ hǎo, wǒ yào yì bēi chá.</dd><dd class="en">Hello, I would like a cup of tea.</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">B</b> 好的。还要别的吗?</dt><dd class="py">Hǎo de. Hái yào biéde ma?</dd><dd class="en">Sure. Anything else?</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 不要了，谢谢。多少钱?</dt><dd class="py">Bú yào le, xièxie. Duōshao qián?</dd><dd class="en">No thanks. How much is it?</dd></dl>
+          <p><b>Patterns used:</b> modal 要 (14), number + measure word (17), 吗 question (6), 了 for a change of mind (11).</p>
+        </article>
+        <article class="card">
+          <h3>C. Asking for directions</h3>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 请问，附近有银行吗?</dt><dd class="py">Qǐngwèn, fùjìn yǒu yínháng ma?</dd><dd class="en">Excuse me, is there a bank nearby?</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">B</b> 有，就在商店旁边。</dt><dd class="py">Yǒu, jiù zài shāngdiàn pángbiān.</dd><dd class="en">Yes, right next to the shop.</dd></dl>
+          <dl class="example"><dt lang="zh-Hans"><b class="who">A</b> 谢谢! 请说慢一点儿。</dt><dd class="py">Xièxie! Qǐng shuō màn yìdiǎnr.</dd><dd class="en">Thank you! Please speak a bit more slowly.</dd></dl>
+          <p><b>Patterns used:</b> 有 for existence (4), 在 for location (5), 请 for politeness (20).</p>
+        </article>
+        <article class="card">
+          <h3>A twenty-minute daily routine</h3>
+          <ol>
+            <li><b>5 min — review.</b> Clear today's spaced-repetition queue before anything new.</li>
+            <li><b>5 min — new material.</b> Five to ten new characters or words, never more.</li>
+            <li><b>5 min — sentences.</b> Write two sentences per new word using a pattern above.</li>
+            <li><b>5 min — sound.</b> Read the sentences aloud and record yourself once a week.</li>
+          </ol>
+          <p class="note">Success check: after a week you can produce yesterday's words in a sentence without looking. If not, cut the new-material step in half.</p>
+        </article>
+      </div>
+      <div class="caveat"><p><strong>Caveat · study timings</strong>The twenty-minute split is a practical starting point, not a research finding. Spaced repetition and distributed practice are well supported in general learning research, but no study establishes an optimal daily schedule specifically for Chinese characters.</p></div>
+    </section>
+
+    <section class="dark-section" id="options" aria-labelledby="options-title">
+      <div class="section-heading"><span>07</span><div><p class="eyebrow">Alternatives</p><h2 id="options-title">Other routes to the same 1000</h2></div></div>
+      <p class="lede">This guide follows an HSK-ordered route because it has an official syllabus and abundant graded material. It is not the only sensible order. Pick the route that matches why you are learning.</p>
+
+      <div class="two-col">
+        <article class="card">
+          <h3>Frequency-first</h3>
+          <p>Learn characters in raw corpus-frequency order, for example from Jun Da's Modern Chinese Character Frequency List.</p>
+          <p><b>Good for:</b> reading native text as early as possible.<br><b>Trade-off:</b> the first hundred include function words that are hard to use in isolation, and the order ignores what beginner textbooks teach.</p>
+        </article>
+        <article class="card">
+          <h3>HSK-ordered (this guide)</h3>
+          <p>Follow the HSK 3.0 bands: 300 characters at Level 1, 600 by Level 2, 900 by Level 3, 1200 by Level 4.</p>
+          <p><b>Good for:</b> exam candidates and anyone who wants graded readers and textbooks that match.<br><b>Trade-off:</b> tied to one exam's editorial choices; HSK 2.0 material is still widely sold.</p>
+        </article>
+        <article class="card">
+          <h3>Textbook-led</h3>
+          <p>Work through a single course such as an integrated Chinese-language series, learning whatever characters the chapters introduce.</p>
+          <p><b>Good for:</b> learners who want grammar, audio, and characters sequenced together.<br><b>Trade-off:</b> slower character coverage; you depend on one author's ordering.</p>
+        </article>
+        <article class="card">
+          <h3>Sentence mining</h3>
+          <p>Harvest sentences from material you actually read or watch, and add only the characters those sentences need.</p>
+          <p><b>Good for:</b> intermediate learners with a clear content interest.<br><b>Trade-off:</b> a beginner has no material to mine yet; it works better after roughly 300 characters.</p>
+        </article>
+        <article class="card">
+          <h3>Component-first</h3>
+          <p>Learn the most productive components and radicals before whole characters, then treat each character as a small assembly.</p>
+          <p><b>Good for:</b> visual learners and anyone who feels characters are arbitrary.<br><b>Trade-off:</b> delays useful vocabulary; best used alongside another route, not instead of it.</p>
+        </article>
+        <article class="card">
+          <h3>Recognition-only</h3>
+          <p>Skip handwriting and train reading and typing (pinyin input) only.</p>
+          <p><b>Good for:</b> travel, reading, and messaging; roughly doubles apparent progress speed.<br><b>Trade-off:</b> weaker recall of similar-looking characters, and no help in a handwriting exam.</p>
+        </article>
+      </div>
+
+      <h3>Tools worth having</h3>
+      <ul>
+        <li><b>A pop-up dictionary.</b> <a href="https://www.pleco.com/">Pleco</a> is the reference mobile dictionary; the open <a href="https://www.mdbg.net/chinese/dictionary?page=cedict">CC-CEDICT</a> database sits behind many free tools.</li>
+        <li><b>Stroke-order animation.</b> <a href="https://hanziwriter.org/docs.html">Hanzi Writer</a> is an open-source library that animates and quizzes stroke order.</li>
+        <li><b>Grammar reference.</b> The <a href="https://resources.allsetlearning.com/chinese/grammar/">Chinese Grammar Wiki</a> indexes patterns by level with example sentences.</li>
+        <li><b>Spaced repetition.</b> Any scheduler that shows you a card just before you would forget it. The principle is well evidenced; the specific app matters far less.</li>
+      </ul>
+      <div class="caveat"><p><strong>Caveat · tool listings</strong>Tool listings are descriptive, not endorsements, and the market changes quickly. Verify pricing, platform support, and data licensing yourself before committing to one.</p></div>
+    </section>
+
+    <section class="paper-section" id="fix-it" aria-labelledby="fix-title">
+      <div class="section-heading"><span>08</span><div><p class="eyebrow">Troubleshooting</p><h2 id="fix-title">When it stops working</h2></div></div>
+      <p class="lede">Most beginner problems are a rung of the ladder that was skipped. Find the symptom, then go back one rung.</p>
+      <ul class="diagnostic">
+        <li>
+          <h3>"I recognise the character but cannot recall the sound."</h3>
+          <p><b>Likely cause</b> You learned the shape and the English meaning but never the pinyin as part of the same item.</p>
+          <p><b>Fix</b> Re-make the card so that the answer side always contains character, pinyin with tone, and meaning together, and say the word aloud when you answer.</p>
+        </li>
+        <li>
+          <h3>"Similar characters keep blurring together."</h3>
+          <p><b>Likely cause</b> You are memorising whole shapes instead of components.</p>
+          <p><b>Fix</b> Split each confusable pair into components and name the difference: 你 <span class="py">nǐ</span> has the person radical, 他 <span class="py">tā</span> also has it but with a different phonetic side; 买 <span class="py">mǎi</span> and 卖 <span class="py">mài</span> differ by one stroke group on top.</p>
+        </li>
+        <li>
+          <h3>"My tones vanish in real sentences."</h3>
+          <p><b>Likely cause</b> Tones were drilled in isolation, not in pairs.</p>
+          <p><b>Fix</b> Practise two-syllable words rather than single characters, and learn the sandhi rules explicitly: third + third becomes second (你好 → <span class="py">ní hǎo</span>), and 不 becomes <span class="py">bú</span> before a fourth tone.</p>
+        </li>
+        <li>
+          <h3>"I know 500 characters but cannot read a menu."</h3>
+          <p><b>Likely cause</b> Character coverage is not comprehension. Knowing 1000 characters covers around 89% of running text, but the remaining 11% is spread through almost every sentence.</p>
+          <p><b>Fix</b> Shift study from characters to two-character words, and read graded material at your level rather than authentic text.</p>
+        </li>
+        <li>
+          <h3>"My sentences are word-for-word English."</h3>
+          <p><b>Likely cause</b> Vocabulary grew faster than patterns.</p>
+          <p><b>Fix</b> Stop adding words for a week. Take ten patterns from section 05 and write five sentences each using words you already own.</p>
+        </li>
+        <li>
+          <h3>"The reviews have become unmanageable."</h3>
+          <p><b>Likely cause</b> Too many new items per day; a queue grows roughly ten times the daily intake.</p>
+          <p><b>Fix</b> Cap new items at five to ten a day, clear the backlog before adding anything, and drop handwriting to recognition-only if you are short of time.</p>
+        </li>
+        <li>
+          <h3>"Two sources give different traditional characters."</h3>
+          <p><b>Likely cause</b> You are mixing scripts and regions. Mainland China and Singapore use simplified; Taiwan, Hong Kong, and Macau use traditional, and standard word choices differ too.</p>
+          <p><b>Fix</b> Choose one target region first. Convert later — the simplified-to-traditional mapping is not always one to one.</p>
+        </li>
+        <li>
+          <h3>"My textbook's level does not match the app's."</h3>
+          <p><b>Likely cause</b> HSK 2.0 (six levels) and HSK 3.0 (nine levels) are both in circulation.</p>
+          <p><b>Fix</b> Check which standard a resource follows before trusting its level labels, and treat any single "HSK 1 character list" as approximate.</p>
+        </li>
+      </ul>
+    </section>
+
+    <section class="dark-section" id="next" aria-labelledby="next-title">
+      <div class="section-heading"><span>09</span><div><p class="eyebrow">Next steps</p><h2 id="next-title">After the first thousand</h2></div></div>
+      <div class="next-grid">
+        <article class="card">
+          <h3>Push to 2000 characters</h3>
+          <p>The second thousand takes you from roughly 89% to roughly 97% coverage of running text. Progress feels slower per character but reading feels dramatically easier.</p>
+        </article>
+        <article class="card">
+          <h3>Switch from characters to words</h3>
+          <p>Most modern Chinese words are two characters. Once you have 1000 characters, add words rather than characters: you already know the parts.</p>
+        </article>
+        <article class="card">
+          <h3>Read graded material daily</h3>
+          <p>Graded readers at HSK 3 to 4 turn recognition into fluency. Aim for text where you understand about 95% without a dictionary.</p>
+        </article>
+        <article class="card">
+          <h3>Add listening at natural speed</h3>
+          <p>Reading progress hides listening gaps. Short podcasts for learners, replayed several times, close the gap faster than more flashcards.</p>
+        </article>
+        <article class="card">
+          <h3>Take a level test</h3>
+          <p>If you want an external checkpoint, HSK 3 is a realistic first exam at 900 characters. Check the current official syllabus before booking.</p>
+        </article>
+        <article class="card">
+          <h3>Decide about handwriting</h3>
+          <p>If you skipped handwriting, this is the point to decide. Writing 200 to 300 core characters by hand sharpens recognition of everything else.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="print-cta" aria-labelledby="print-title">
+      <h2 id="print-title">Take it off the screen</h2>
+      <p>A separate one-page printable guide holds the ladder model, tone rules, forty core words with pinyin, and ten sentence patterns. It is laid out for Letter and A4 with no clipped cards.</p>
+      <p><a class="button primary" href="print-guide.html">Open the print guide</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <section aria-labelledby="glossary-title">
+      <h2 id="glossary-title">Plain-language glossary</h2>
+      <dl class="glossary">
+        <div><dt lang="zh-Hans">汉字 <span class="py">hànzì</span></dt><dd>Chinese characters, the writing units themselves.</dd></div>
+        <div><dt>Pinyin <span class="py">pīnyīn</span></dt><dd>The official romanisation of Mandarin sounds.</dd></div>
+        <div><dt>Tone</dt><dd>One of four pitch contours, plus a neutral tone, that distinguish meaning.</dd></div>
+        <div><dt>Tone sandhi</dt><dd>A predictable tone change caused by a neighbouring tone.</dd></div>
+        <div><dt>Stroke</dt><dd>A single pen movement; the smallest unit of a character.</dd></div>
+        <div><dt>Component</dt><dd>A reusable sub-shape inside a character, such as 女 or 口.</dd></div>
+        <div><dt>Radical <span class="py">bùshǒu</span></dt><dd>The component under which a character is filed in a dictionary.</dd></div>
+        <div><dt lang="zh-Hans">形声字 <span class="py">xíngshēngzì</span></dt><dd>A character combining a meaning hint with a sound hint.</dd></div>
+        <div><dt>Measure word</dt><dd>A classifier required between a number and a noun, such as 个.</dd></div>
+        <div><dt>HSK</dt><dd>The state-backed Chinese proficiency test and its syllabus.</dd></div>
+        <div><dt>Simplified / Traditional</dt><dd>Two standard character sets used in different regions.</dd></div>
+        <div><dt>Coverage</dt><dd>The share of running text tokens a character set accounts for.</dd></div>
+      </dl>
+    </section>
+
+    <section aria-labelledby="sources-title">
+      <h2 id="sources-title">Sources &amp; caveats</h2>
+      <p>Reviewed 19 August 2026. Numbers on this page are cited below and discussed, with evidence tiers and open questions, in <a href="research-notes.md">research-notes.md</a>. Where a figure is disputed or editorial, a caveat appears beside it rather than in a footnote.</p>
+      <ul class="sources">
+        <li>Chinese Ministry of Education, <a href="https://www.moe.gov.cn/jyb_xwfb/gzdt_gzdt/s5987/202103/t20210329_523304.html">announcement of GF 0025-2021, the HSK 3.0 grading standard</a> (authoritative).</li>
+        <li>Chinese Ministry of Education, <a href="https://www.moe.gov.cn/jyb_xwfb/s271/202104/t20210402_524194.html">explanatory notes on the nine-level standard</a> (authoritative).</li>
+        <li><a href="http://www.chinesetest.cn/">Official HSK test portal</a> for current syllabus and registration (authoritative, changes over time).</li>
+        <li>Chinese Ministry of Education, <a href="http://www.moe.gov.cn/jyb_sjzl/ziliao/A19/201306/t20130601_186002.html">通用规范汉字表 (Table of General Standard Chinese Characters), 2013</a>: 3500 + 3000 + 1605 = 8105 characters (authoritative).</li>
+        <li>Jun Da, <a href="http://lingua.mtsu.edu/chinese-computing/statistics/char/list.php?Which=MO">Modern Chinese Character Frequency List</a>, Middle Tennessee State University (specialist corpus data).</li>
+        <li><a href="https://ota.ox.ac.uk/repository/xmlui/handle/20.500.12024/2474">Lancaster Corpus of Mandarin Chinese</a> (specialist corpus data).</li>
+        <li>Cai &amp; Brysbaert, <a href="https://doi.org/10.1371/journal.pone.0010729">SUBTLEX-CH: Chinese word and character frequencies based on film subtitles</a>, PLoS ONE (peer-reviewed).</li>
+        <li><a href="https://www.iso.org/standard/61420.html">ISO 7098:2015</a>, the international standard for pinyin romanisation (authoritative).</li>
+        <li><a href="https://pinyin.info/rules/GBT16159-2012_traditional.html">GB/T 16159-2012</a>, the basic rules for pinyin orthography (authoritative standard, mirrored copy).</li>
+        <li><a href="https://archive.org/details/GF0023-2020">GF 0023-2020</a> and <a href="https://archive.org/details/19970800_202307">the 1997 stroke-order standard</a> (authoritative standards, archived copies).</li>
+        <li>Encyclopaedia Britannica, <a href="https://www.britannica.com/topic/liu-shu">liushu, the six categories of character formation</a> (reference).</li>
+        <li><a href="https://en.wikipedia.org/wiki/Kangxi_radicals">Kangxi radicals</a>, the 214-radical system still used by many dictionaries (general reference).</li>
+        <li>Frontiers in Psychology, <a href="https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2017.00962/full">research on character learning and component awareness</a> (peer-reviewed).</li>
+        <li><a href="https://resources.allsetlearning.com/chinese/grammar/">Chinese Grammar Wiki</a> (specialist, editorially graded).</li>
+        <li><a href="https://hanziwriter.org/docs.html">Hanzi Writer</a> and <a href="https://www.mdbg.net/chinese/dictionary?page=cedict">CC-CEDICT</a> (open-source tools and data).</li>
+        <li><a href="https://www.pleco.com/">Pleco</a> (commercial tool, listed descriptively).</li>
+      </ul>
+      <p class="legal">This is an independent educational guide. It is not affiliated with, endorsed by, or connected to the Chinese Ministry of Education, the Center for Language Education and Cooperation, the HSK examination bodies, or any tool named above. All diagrams, tables, and layouts here are original work; Chinese characters and pinyin are elements of the language itself. Level labels and vocabulary selections are our editorial synthesis of the published standards — always confirm against the current official syllabus before an exam.</p>
+    </section>
+  </footer>
+
+</body>
+</html>
