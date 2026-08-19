@@ -184,9 +184,9 @@ section, footer { padding: clamp(3.5rem, 7vw, 7rem) max(1rem, calc((100% - 1180p
   font-size: .92rem;
   max-width: 78ch;
 }
-.caveat b { text-transform: uppercase; font: 800 .72rem var(--mono); letter-spacing: .08em; display: block; color: var(--gold); }
+.caveat b, .caveat strong { text-transform: uppercase; font: 800 .72rem var(--mono); letter-spacing: .08em; display: block; color: var(--gold); }
 .dark-section .caveat { background: rgba(233, 187, 100, .12); border-left-color: #dbab52; }
-.dark-section .caveat b { color: #e8c37a; }
+.dark-section .caveat b, .caveat strong { color: #e8c37a; }
 
 .badge { display: inline-block; margin-top: .5rem; padding: .2rem .45rem; border: 1px dashed; font: 700 .7rem var(--mono); }
 .badge.level { color: var(--seal); }
